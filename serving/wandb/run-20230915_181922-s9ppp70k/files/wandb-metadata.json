@@ -1,0 +1,45 @@
+{
+    "os": "macOS-13.3.1-x86_64-i386-64bit",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-09-16T01:19:23.057535",
+    "startedAt": "2023-09-16T01:19:22.420164",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/annieyuchuan/Desktop/project/foodformer-project/serving/download_model.py",
+    "codePathLocal": "download_model.py",
+    "codePath": "serving/download_model.py",
+    "git": {
+        "remote": "https://github.com/annieycchiu/foodformer",
+        "commit": "9f2f2447a11156b47772784550c27a1685aa00b5"
+    },
+    "email": "annieycchiu@gmail.com",
+    "root": "/Users/annieyuchuan/Desktop/project/foodformer-project",
+    "host": "annies-air.ds.usfca.edu",
+    "username": "annieyuchuan",
+    "executable": "/opt/anaconda3/envs/foodformer/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2400,
+        "min": 2400,
+        "max": 2400
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400,
+            "min": 2400,
+            "max": 2400
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 228.27386474609375,
+            "used": 204.38412475585938
+        }
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

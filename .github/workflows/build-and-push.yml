@@ -7,7 +7,7 @@ env:
   ECR_REPOSITORY: foodformer                
   ECS_SERVICE: foodformer-ecs-service         
   ECS_CLUSTER: foodformer-ecs-cluster         
-  ECS_TASK_DEFINITION: foodformer-ecs-task-definition                                            
+  ECS_TASK_DEFINITION: foodformer-ecs-task-definition                                          
   CONTAINER_NAME: foodformer-container
                                              
 

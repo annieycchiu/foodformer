@@ -1,3 +1,5 @@
+#!/bin/bash
+
 FROM python:3.10.10-slim
 
 COPY ./requirements.txt ./requirements.txt

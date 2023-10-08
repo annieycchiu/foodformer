@@ -7,4 +7,4 @@ RUN pip install -r requirements.txt
 COPY ./serving ./serving
 
 
-CMD ["uvicorn", "serving.app:app", "--host", "0.0.0.0", "--port", "80"]
+ENTRYPOINT ["uvicorn", "serving.app:app", "--host", "0.0.0.0", "--port", "80"]

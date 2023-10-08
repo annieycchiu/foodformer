@@ -30,15 +30,8 @@ def preprocess_image(image: Image.Image) -> torch.tensor:
 def read_imagefile(file: bytes) -> Image.Image:
     return Image.open(BytesIO(file))
 
-
-# package_path = Path(__file__).parent.parent
-
-# MODEL_PATH = package_path / "models/model.ckpt"
-
 package_path = Path(__file__).parent
-
 MODEL_PATH = package_path / "model.ckpt"
-
 
 def load_model(model_path: str | Path = MODEL_PATH) -> torch.nn.Module:
     checkpoint = torch.load(model_path, map_location=torch.device("cpu"))

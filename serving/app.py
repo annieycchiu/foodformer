@@ -1,6 +1,7 @@
 from functools import partial
 from io import BytesIO
 from pathlib import Path
+import json
 
 import torch
 import uvicorn
@@ -72,7 +73,17 @@ async def predict_api(file: UploadFile = File(...)) -> ClassPredictions:
 
     image = read_imagefile(await file.read())
     x = preprocess_image(image)
-    return ClassPredictions(predictions=predict(x))
+
+    predictions=predict(x)
+
+    log = {
+        "message": f"Predictions for {file.filename}: {predictions}",
+        "top_class": list(predictions.keys())[0],
+        "score": list(predictions.values())[0],
+    }
+    logger.info(json.dumps(log))
+
+    return ClassPredictions(predictions=predictions)
 
 
 if __name__ == "__main__":
